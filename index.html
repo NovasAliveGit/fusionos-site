@@ -5,7 +5,8 @@
   <meta http-equiv="refresh" content="0; url=https://www.fusionos.ca/">
   <title>Fusion OS</title>
   <script>
-    window.location.replace('https://www.fusionos.ca/');
+    const target = 'https://www.fusionos.ca' + window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace(target);
   </script>
 </head>
 <body>
