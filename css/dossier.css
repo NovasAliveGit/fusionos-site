@@ -1,0 +1,50 @@
+/* Nova dossier — minimal, dark, monospace-leaning, designed for engineers to read fast */
+:root {
+  --bg: #0a0a0c;
+  --bg-elev: #14141a;
+  --fg: #e8e8ee;
+  --fg-dim: #9b9bab;
+  --accent: #6ee7b7;
+  --accent-warm: #fbbf24;
+  --border: #26262e;
+  --code-bg: #1a1a22;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.hero { padding: 5rem 1.5rem 4rem; border-bottom: 1px solid var(--border); }
+.hero-inner { max-width: 740px; margin: 0 auto; }
+.kicker { color: var(--fg-dim); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; margin: 0 0 1rem; }
+h1 { font-size: 4rem; font-weight: 700; margin: 0 0 1rem; letter-spacing: -0.04em; }
+.subtitle { font-size: 1.2rem; color: var(--fg); margin: 0 0 1.5rem; }
+.callout { background: var(--bg-elev); border-left: 3px solid var(--accent); padding: 1rem 1.25rem; font-size: 0.95rem; color: var(--fg-dim); border-radius: 4px; }
+main { max-width: 740px; margin: 0 auto; padding: 3rem 1.5rem; }
+section { margin-bottom: 4rem; }
+h2 { font-size: 1.8rem; margin: 0 0 1.5rem; letter-spacing: -0.02em; }
+h3 { font-size: 1.2rem; margin: 0 0 0.75rem; color: var(--accent); }
+.receipt { background: var(--bg-elev); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.receipt p { margin: 0 0 0.75rem; }
+.receipt-files { list-style: none; padding: 0.75rem 1rem; background: var(--code-bg); border-radius: 4px; margin: 1rem 0; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.875rem; }
+.receipt-files li { margin: 0.25rem 0; }
+.receipt-files a { color: var(--accent); text-decoration: none; }
+.receipt-files a:hover { text-decoration: underline; }
+.receipt-claim { background: rgba(110, 231, 183, 0.06); border-left: 2px solid var(--accent); padding: 0.75rem 1rem; font-size: 0.95rem; margin-top: 1rem !important; border-radius: 0 4px 4px 0; }
+a { color: var(--accent); }
+code { background: var(--code-bg); color: var(--accent-warm); padding: 0.1em 0.4em; border-radius: 3px; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.9em; }
+pre { background: var(--code-bg); color: var(--fg); padding: 1rem; border-radius: 6px; overflow-x: auto; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85rem; line-height: 1.5; }
+pre code { background: none; color: inherit; padding: 0; }
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.panel { background: var(--bg-elev); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
+.panel h3 { font-size: 0.9rem; color: var(--fg-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.panel pre { font-size: 0.75rem; max-height: 200px; overflow-y: auto; }
+.meta { color: var(--fg-dim); font-size: 0.85rem; margin-top: 1rem; }
+footer { border-top: 1px solid var(--border); padding-top: 2rem; color: var(--fg-dim); font-size: 0.85rem; }
+@media (max-width: 600px) {
+  h1 { font-size: 2.5rem; }
+  .panels { grid-template-columns: 1fr; }
+}
