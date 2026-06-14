@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=https://www.fusionos.ca/api/lead">
+  <title>Fusion OS</title>
+  <script>
+    const target = 'https://www.fusionos.ca' + window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace(target);
+  </script>
+</head>
+<body>
+  <p><a href="https://www.fusionos.ca/api/lead">Continue to Fusion OS</a></p>
+</body>
+</html>
